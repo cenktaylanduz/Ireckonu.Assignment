@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ireckonu.Assignment.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Ireckonu.Assignment.Api.Config.ApiConfig">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Ireckonu.Assignment.Api.Config.ApiConfig.Name">
+            <summary>
+                App Name
+            </summary>
+        </member>
+        <member name="P:Ireckonu.Assignment.Api.Config.ApiConfig.Version">
+            <summary>
+                App Version
+            </summary>
+        </member>
+        <member name="P:Ireckonu.Assignment.Api.Config.ApiConfig.Environment">
+            <summary>
+                Environment (dev,prod,staging)
+            </summary>
+        </member>
+        <member name="T:Ireckonu.Assignment.Api.Controllers.BaseController">
+            <summary>
+                Abstract Base Controller
+            </summary>
+        </member>
+        <member name="F:Ireckonu.Assignment.Api.Controllers.BaseController._logger">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Ireckonu.Assignment.Api.Controllers.FileController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Ireckonu.Assignment.Api.Controllers.FileController.#ctor(Microsoft.Extensions.Logging.ILogger{Ireckonu.Assignment.Api.Controllers.FileController},Ireckonu.Assignment.Business.Services.Abstractions.IFileService)">
+            <summary>
+            </summary>
+            <param name="logger"></param>
+            <param name="fileService"></param>
+        </member>
+        <member name="M:Ireckonu.Assignment.Api.Controllers.FileController.Upload(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile},System.Boolean)">
+            <summary>
+                Upload File(s) and Enqueue To Process By Consumer
+            </summary>
+            <param name="formFileList"></param>
+            <param name="enqueue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ireckonu.Assignment.Api.Controllers.FileController.Test(System.String)">
+            <summary>
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ireckonu.Assignment.Api.Models.FileUploadRequest">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Ireckonu.Assignment.Api.Program">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Ireckonu.Assignment.Api.Program.Main(System.String[])">
+            <summary>
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Ireckonu.Assignment.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ireckonu.Assignment.Api.Startup">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Ireckonu.Assignment.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Ireckonu.Assignment.Api.Startup.Configuration">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Ireckonu.Assignment.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Ireckonu.Assignment.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+                This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
